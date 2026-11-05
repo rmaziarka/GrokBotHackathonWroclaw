@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793903009577,
+      "tag": "20261105182329_slim_darkstar",
+      "breakpoints": true
+    }
+  ]
+}
