@@ -1,0 +1,35 @@
+:root {
+  color-scheme: light dark;
+  font: 18px/1.45 system-ui, "Segoe UI", Roboto, sans-serif;
+  background: #fff;
+  color: #16171d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #16171d;
+    color: #fff;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+}
