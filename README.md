@@ -52,3 +52,5 @@ Deploy from your own machine. This repository has no Cloudflare credentials, and
    ```
 
    That script runs `void deploy`.
+
+`void.lock.json` pins the Worker name and Cloudflare account.
