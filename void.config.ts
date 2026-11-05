@@ -2,10 +2,29 @@
 import { defineConfig } from 'void/config';
 
 export default defineConfig({
-  "routing": {
-    "typedRoutes": true
+  head: {
+    titleTemplate: "%s",
+    htmlAttrs: { lang: "pl" },
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "description",
+        content: "Wspólny pulpit lodówki, posiłków i zakupów dla jednego gospodarstwa.",
+      },
+    ],
   },
-  "worker": {
-    "compatibility_date": "2026-02-24"
-  }
+  routing: {
+    typedRoutes: true,
+    headers: {
+      "/*": [
+        "X-Content-Type-Options: nosniff",
+        "X-Frame-Options: DENY",
+        "Referrer-Policy: no-referrer",
+        "Permissions-Policy: camera=(), microphone=(), geolocation=()",
+      ],
+    },
+  },
+  worker: {
+    compatibility_date: "2026-02-24",
+  },
 });
