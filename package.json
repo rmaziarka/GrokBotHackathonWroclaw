@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "hono": "^4.11.9",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "void": "^1.6.2",
+    "vite": "^8.0.10",
+    "typescript": "^7.0.2",
+    "@void/react": "1.6.2",
+    "oxc-transform-react": "^0.152.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  },
+  "name": "grokbot-hackathon-wroclaw",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "deploy": "void deploy",
+    "postinstall": "void prepare"
+  }
+}
