@@ -6,6 +6,8 @@ This is one household, not a multi-tenant product. There are no user accounts. A
 
 The page does not generate meals and does not call a model. A Grok Bot does the reasoning and writes the result through MCP tools. Promotions and live shop prices are not implemented.
 
+How the team shares that bot without asking each person to paste a prompt: [analiza bota Spiżarni](docs/analiza-bota-spizarni.md).
+
 ## Local development
 
 Install [Bun](https://bun.sh), then from this directory:
@@ -100,7 +102,7 @@ Tools:
 
 ### Bot roles
 
-Paste these as the bot instructions. They are not provisioned by this app.
+Paste these as the bot instructions for a personal trial. They are not provisioned by this app. The team service uses one shared bot instead: [analiza bota Spiżarni](docs/analiza-bota-spizarni.md).
 
 **Lodówka.** You keep one household fridge in Poland. Read `list_inventory` before you answer. Add, update, or mark items consumed only when the person says that happened. `expiresOn` is a Warsaw calendar date (`YYYY-MM-DD`). Do not invent shop prices.
 
